@@ -1,21 +1,24 @@
 """Provide the class Omforme for transformations on a generator.
 
-Use case example: Given a stream of lines e.g. in gen
+Use case example:
+
+from omforme.omforme import Omforme
+
+Given a stream of lines e.g. in gen
 
 gen = (x for x in ('a', 'b', 'c', 'c', 'c', 'd', '1', '2', '3', 'e'))
 
 with defining a playbook of:
 
-playbook = (
-    ('b', 'ignore', lambda: None),
-    ('d', 'collect', list()),
-    ('e', 'return', lambda: None),
-)
+playbook = (('b', 'ignore', lambda: None), ('d', 'collect', list()), ('e', 'return', lambda: None),)
 
 when calling
 
 transform = Omforme(playbook)(gen)
 
+then transform should become:
+
+(('b', 'ignore', ...), ('d', 'collect', ['c', 'c', 'c', 'd', '1', '2', '3', 'e']), ('e', 'return', ...))
 
 """
 
@@ -41,10 +44,9 @@ class Omforme:
                     phase += 1
                     trigger, what, where_to = self.playbook[phase]
                     continue
-            else:
-                if what == 'collect':
-                    where_to.append(data)
-            if 'what' == 'return':
+            if what == 'return':
                 break
+            if what == 'collect':
+                where_to.append(data)
 
         return self.playbook
