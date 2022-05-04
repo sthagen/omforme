@@ -20,7 +20,7 @@ then transform should become:
 
 (
     ('b', 'ignore', <function <lambda> at 0x...>),
-    ('d', 'collect', ['1', '2', '3', 'e']),
+    ('d', 'collect', ['1', '2', '3']),
     ('e', 'return', <function <lambda> at 0x...>)
 )
 
@@ -51,10 +51,10 @@ class Omforme:
                     trigger, what, where_to = self.playbook[phase]
                     peek = self.playbook[phase + 1][0]
                     continue
-            print(phase, stop, data, where_to)
             if what == 'return':
                 break
-            if what == 'collect':
+            if what == 'collect' and data != peek:
                 where_to.append(data)
+            print(phase, stop, data, trigger, what, where_to, peek)
 
         return self.playbook
