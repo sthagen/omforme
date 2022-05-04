@@ -77,3 +77,8 @@ class Omforme:
             print(phase, stop, data, trigger, what, where_to, peek)
 
         return self.playbook
+
+
+if __name__ == "__main__":
+    import doctest
+    doctest.testmod(verbose=True, optionflags=doctest.ELLIPSIS)
