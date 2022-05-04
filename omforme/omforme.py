@@ -44,4 +44,7 @@ class Omforme:
             else:
                 if what == 'collect':
                     where_to.append(data)
+            if 'what' == 'return':
+                break
+
         return self.playbook
