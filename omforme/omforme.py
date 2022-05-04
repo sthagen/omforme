@@ -18,7 +18,11 @@ transform = Omforme(playbook)(gen)
 
 then transform should become:
 
-(('b', 'ignore', ...), ('d', 'collect', ['c', 'c', 'c', 'd', '1', '2', '3', 'e']), ('e', 'return', ...))
+(
+    ('b', 'ignore', <function <lambda> at 0x...>),
+    ('d', 'collect', ['1', '2', '3', 'e']),
+    ('e', 'return', <function <lambda> at 0x...>)
+)
 
 """
 
@@ -38,12 +42,16 @@ class Omforme:
         """Apply transform to generator stream of events."""
         phase = 0
         trigger, what, where_to = self.playbook[phase]
+        peek = self.playbook[phase + 1][0]
+        stop = len(self.playbook)
         for data in gen:
-            if data == trigger:
-                if phase + 2 < len(self.playbook):
+            if data == peek:
+                if phase + 2 < stop:
                     phase += 1
                     trigger, what, where_to = self.playbook[phase]
+                    peek = self.playbook[phase + 1][0]
                     continue
+            print(phase, stop, data, where_to)
             if what == 'return':
                 break
             if what == 'collect':
