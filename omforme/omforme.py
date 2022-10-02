@@ -25,6 +25,10 @@ then transform should become:
 )
 
 """
+import argparse
+
+from omforme import DEBUG, ENCODING, ENCODING_ERRORS_POLICY, log
+
 
 class Omforme:
     """Provide a generator borrowing consumer that returns the transform applying playbook to the stream.
@@ -53,6 +57,7 @@ class Omforme:
     >>>
 
     """
+
     def __init__(self, playbook):
         """Later alligator."""
         self.playbook = playbook
@@ -79,6 +84,12 @@ class Omforme:
         return self.playbook
 
 
-if __name__ == "__main__":
+def main(options: argparse.Namespace) -> int:
+    log.info(f'{DEBUG=}, {ENCODING=}, {ENCODING_ERRORS_POLICY=}')
+    return 0
+
+
+if __name__ == '__main__':
     import doctest
+
     doctest.testmod(verbose=True, optionflags=doctest.ELLIPSIS)
