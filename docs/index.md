@@ -4,6 +4,8 @@ Reshape (Danish: omforme).
 
 [License: MIT](https://git.sr.ht/~sthagen/omforme/tree/default/item/LICENSE)
 
+Third party dependencies are documented in the folder [third-party](third-party/README.md).
+
 [![version](https://img.shields.io/pypi/v/omforme.svg?style=flat)](https://pypi.python.org/pypi/omforme/)
 [![downloads](https://pepy.tech/badge/omforme/month)](https://pepy.tech/project/omforme)
 [![wheel](https://img.shields.io/pypi/wheel/omforme.svg?style=flat)](https://pypi.python.org/pypi/omforme/)
