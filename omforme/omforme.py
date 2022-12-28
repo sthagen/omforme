@@ -26,6 +26,7 @@ then transform should become:
 
 """
 import argparse
+from typing import no_type_check
 
 from omforme import DEBUG, ENCODING, ENCODING_ERRORS_POLICY, log
 
@@ -58,10 +59,12 @@ class Omforme:
 
     """
 
+    @no_type_check
     def __init__(self, playbook):
         """Later alligator."""
         self.playbook = playbook
 
+    @no_type_check
     def __call__(self, gen):
         """Apply transform to generator stream of events."""
         phase = 0
