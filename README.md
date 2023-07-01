@@ -11,6 +11,7 @@ Third party dependencies are documented in the folder [third-party](docs/third-p
 [![wheel](https://img.shields.io/pypi/wheel/omforme.svg?style=flat)](https://pypi.python.org/pypi/omforme/)
 [![supported-versions](https://img.shields.io/pypi/pyversions/omforme.svg?style=flat)](https://pypi.python.org/pypi/omforme/)
 [![supported-implementations](https://img.shields.io/pypi/implementation/omforme.svg?style=flat)](https://pypi.python.org/pypi/omforme/)
+[![maintenance-status](https://img.shields.io/github/commit-activity/y/sthagen/omforme.svg?style=flat)](https://git.sr.ht/~sthagen/omforme/log)
 
 ## Documentation
 
