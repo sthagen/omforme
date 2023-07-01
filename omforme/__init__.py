@@ -1,3 +1,4 @@
+"""Reshape (Danish: omforme)."""
 import datetime as dti
 import logging
 import os
@@ -12,17 +13,18 @@ __version_info__ = tuple(
 )
 __all__: list[str] = []
 
-APP_ALIAS = 'omforme'
-APP_ENV = 'OMFORME'
-APP_NAME = 'Reshape (Danish: omforme).'
+APP_ALIAS = str(pathlib.Path(__file__).parent.name)
+APP_ENV = APP_ALIAS.upper()
+APP_NAME = locals()['__doc__']
 DEBUG = bool(os.getenv(f'{APP_ENV}_DEBUG', ''))
-DEFAULT_CONFIG_NAME = '.omforme.json'
-DEFAULT_LF_ONLY = 'YES'
+VERBOSE = bool(os.getenv(f'{APP_ENV}_VERBOSE', ''))
+QUIET = False
+STRICT = bool(os.getenv(f'{APP_ENV}_STRICT', ''))
 ENCODING = 'utf-8'
 ENCODING_ERRORS_POLICY = 'ignore'
-QUIET = False
-VERBOSE = bool(os.getenv(f'{APP_ENV}_VERBOSE', ''))
-STRICT = bool(os.getenv(f'{APP_ENV}_STRICT', ''))
+DEFAULT_CONFIG_NAME = f'.{APP_ALIAS}.json'
+
+DEFAULT_LF_ONLY = 'YES'
 log = logging.getLogger()  # Module level logger is sufficient
 LOG_FOLDER = pathlib.Path('logs')
 LOG_FILE = f'{APP_ALIAS}.log'
