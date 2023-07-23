@@ -1,8 +1,8 @@
 # Third Party Dependencies
 
 <!--[[[fill sbom_sha256()]]]-->
-The [SBOM in CycloneDX v1.4 JSON format](https://git.sr.ht/~sthagen/omforme/blob/default/sbom/cdx.json) with SHA256 checksum ([87fc3057 ...](https://git.sr.ht/~sthagen/omforme/blob/default/sbom/cdx.json.sha256 "sha256:87fc30577ad97381d65d15dfcd96408198e87d4f8cc61adb54b301a075ad00e6")).
-<!--[[[end]]] (checksum: b9395d373688bee538f4c8fa44d3330d)-->
+The [SBOM in CycloneDX v1.4 JSON format](https://git.sr.ht/~sthagen/omforme/blob/default/sbom/cdx.json) with SHA256 checksum ([403b5293 ...](https://git.sr.ht/~sthagen/omforme/blob/default/sbom/cdx.json.sha256 "sha256:403b5293e7b366cd3a8a59f3022a76c8cd281d6ab55ee24d4eb26b79917f708d")).
+<!--[[[end]]] (checksum: f15f4e73584fb695f91a886d19837f72)-->
 ## Licenses 
 
 JSON files with complete license info of: [direct dependencies](direct-dependency-licenses.json) | [all dependencies](all-dependency-licenses.json)
@@ -18,10 +18,11 @@ JSON files with complete license info of: [direct dependencies](direct-dependenc
 ### Indirect Dependencies
 
 <!--[[[fill indirect_dependencies_table()]]]-->
-| Name                                          | Version                                        | License     | Author         | Description (from packaging data)         |
-|:----------------------------------------------|:-----------------------------------------------|:------------|:---------------|:------------------------------------------|
-| [click](https://palletsprojects.com/p/click/) | [8.1.3](https://pypi.org/project/click/8.1.3/) | BSD License | Armin Ronacher | Composable command line interface toolkit |
-<!--[[[end]]] (checksum: dc3a866a7aa3332404bde3da87727cb9)-->
+| Name                                                             | Version                                                    | License                            | Author                                                                                | Description (from packaging data)                      |
+|:-----------------------------------------------------------------|:-----------------------------------------------------------|:-----------------------------------|:--------------------------------------------------------------------------------------|:-------------------------------------------------------|
+| [click](https://palletsprojects.com/p/click/)                    | [8.1.3](https://pypi.org/project/click/8.1.3/)             | BSD License                        | Armin Ronacher                                                                        | Composable command line interface toolkit              |
+| [typing_extensions](https://github.com/python/typing_extensions) | [4.4.0](https://pypi.org/project/typing_extensions/4.4.0/) | Python Software Foundation License | "Guido van Rossum, Jukka Lehtosalo, Łukasz Langa, Michael Lee" <levkivskyi@gmail.com> | Backported and Experimental Type Hints for Python 3.7+ |
+<!--[[[end]]] (checksum: ce9eb9e0a6f0193879b25757445a6732)-->
 
 ## Dependency Tree(s)
 
