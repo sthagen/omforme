@@ -1,5 +1,7 @@
 site_name: Omforme
 site_description: "Reshape (Danish: omforme)."
+docs_dir: ../docs
+site_dir: ../site
 
 theme:
   name: 'material'
