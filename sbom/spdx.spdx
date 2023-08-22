@@ -1,0 +1,41 @@
+SPDXVersion: SPDX-2.3
+DataLicense: CC0-1.0
+DocumentNamespace: https://cyclonedx/3ec26616-3a46-4673-ba13-d9bec6f07474_1
+DocumentName: SBOM-for-typer
+SPDXID: SPDXRef-DOCUMENT
+
+## Creation Information
+Creator: Tool: CycloneDX:cyclonedx-bom-3.11.2
+Creator: Tool: CycloneDX:cyclonedx-python-lib-3.1.5
+Creator: Tool: CycloneToSpdx-0.1.4
+Created: 2023-08-22T18:48:23Z
+CreatorComment: <text>Converted from CycloneDX spec version 1.4</text>
+LicenseListVersion: 3.21
+## Annotations
+Annotator: Tool: CycloneToSpdx
+AnnotationDate: 2023-08-22T18:48:26Z
+AnnotationComment: <text>MISSING_CDX_PROPERTY:extensions={}</text>
+AnnotationType: OTHER
+SPDXREF: SPDXRef-DOCUMENT
+## Relationships
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-f58d6913-9deb-40e0-8cf8-b2fdc8894b3a
+
+## Package Information
+PackageName: typer
+SPDXID: SPDXRef-f58d6913-9deb-40e0-8cf8-b2fdc8894b3a
+PackageVersion: 0.9.0
+PackageDownloadLocation: NOASSERTION
+PrimaryPackagePurpose: LIBRARY
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+ExternalRef: PACKAGE-MANAGER purl pkg:pypi/typer@0.9.0
+## Annotations
+Annotator: Tool: CycloneToSpdx
+AnnotationDate: 2023-08-22T18:48:26Z
+AnnotationComment: <text>MISSING_CDX_PROPERTY:componentType="LIBRARY"</text>
+AnnotationType: OTHER
+SPDXREF: SPDXRef-f58d6913-9deb-40e0-8cf8-b2fdc8894b3a
+FilesAnalyzed: false
+
+
