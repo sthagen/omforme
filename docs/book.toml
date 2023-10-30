@@ -11,7 +11,16 @@ title = "Omforme"
 builddir = "book"
 
 [output.html]
-mathjax-support = true
-site-url = "/docs/omforme"
+default-theme = "coal"
 git-repository-url = "https://git.sr.ht/~sthagen/omforme"
+git-repository-icon = "fa-code-fork"
+mathjax-support = true
+no-section-label = true
+preferred-dark-theme = "navy"
+site-url = "/docs/omforme"
 
+[output.html.print]
+enable = false
+
+[output.html.fold]
+enable = false
