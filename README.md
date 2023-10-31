@@ -9,7 +9,7 @@ Reshape (Danish: omforme).
 
 [![Version](docs/badges/latest-release.svg)](https://pypi.python.org/pypi/omforme/)
 [![Downloads](docs/badges/downloads-per-month.svg)](https://pepy.tech/project/omforme)
-[![Supported Versions](https://img.shields.io/pypi/pyversions/omforme.svg?style=flat)](https://pypi.python.org/pypi/omforme/)
+[![Python](docs/badges/python-versions.svg)](https://pypi.python.org/pypi/omforme/)
 [![Maintenance Status](docs/badges/commits-per-year.svg)](https://git.sr.ht/~sthagen/omforme/log)
 
 ## Documentation
