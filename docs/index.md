@@ -7,7 +7,7 @@ Reshape (Danish: omforme).
 [![Export Classification Control Number (ECCN)](badges/export-control-classification-number_eccn-ear99-neutral.svg)](https://git.sr.ht/~sthagen/omforme/tree/default/item/EXPORT-CONTROL-CLASSIFICATION-NUMBER)
 [![Configuration](badges/configuration-sbom.svg)](third-party/index.html)
 
-[![Version](https://img.shields.io/pypi/v/omforme.svg?style=flat)](https://pypi.python.org/pypi/omforme/)
+[![Version](badges/latest-release.svg)](https://pypi.python.org/pypi/omforme/)
 [![Downloads](badges/downloads-per-month.svg)](https://pepy.tech/project/omforme)
 [![Supported Versions](https://img.shields.io/pypi/pyversions/omforme.svg?style=flat)](https://pypi.python.org/pypi/omforme/)
 [![Maintenance Status](badges/commits-per-year.svg)](https://git.sr.ht/~sthagen/omforme/log)
