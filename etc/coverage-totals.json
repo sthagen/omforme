@@ -1,7 +1,7 @@
 {
   "omforme": {
-    "version": "7.3.2",
-    "timestamp": "2023-12-02T15:28:27.995349",
+    "coverage_tool_version": "7.3.2",
+    "timestamp": "2023-12-02 16:26:36 +00:00",
     "branch_coverage": true,
     "show_contexts": true,
     "covered_lines": 76,
@@ -13,6 +13,22 @@
     "num_branches": 20,
     "num_partial_branches": 2,
     "covered_branches": 14,
-    "missing_branches": 6
+    "missing_branches": 6,
+    "node_id": "c79891e5-aabf-3a83-95b9-588edcd8327f",
+    "nfiles": 3,
+    "files": [
+      "omforme/__init__.py",
+      "omforme/cli.py",
+      "omforme/omforme.py"
+    ],
+    "blake3": "95aac003e8d7e117a2eb43d63fd4e847eaa4e06e678ffd314b1d00b519ae2f36",
+    "blake2": "60b4b732fac130b8407cf5986a3dd034d0018a6853b245712fee496c6b4ab6076720662a9e9972fe0ef145a353818d2eed1688e85529113dc335731245713faf",
+    "sha512": "cab883888b1c64d769ca1a24bff702e0f09c94dce3941a0dd2a66871280cce17efd722c6a5257d61d4c5226f720948616b1f6714946367f815b25ddefa52e5a4",
+    "sha384": "de8786621b29231554f1348e01fa4cf94d15193b0b7d027fd6187b61b768fc5d23a901339075bc5f0012b968f8446dca",
+    "sha256": "16aaef2ed7992eeba83f2279525740bfcf73a9677f3a43138bf4ca534bca862b",
+    "sha1": "3c88c34f25f9a30fb89a10a3d6e6968b92298930",
+    "md5": "0f14c50931e6e974de6ecd2e3892f4e3",
+    "python_version": "3.10.12",
+    "entropy": 5.083164
   }
 }
