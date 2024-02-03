@@ -1,4 +1,5 @@
 """Reshape (Danish: omforme)."""
+
 import datetime as dti
 import logging
 import os
