@@ -21,6 +21,7 @@
       "last_month": -1,
       "last_week": -1
     },
+    "dynamic": null,
     "home_page": "",
     "keywords": "developer-tools,data-processing",
     "license": "",
@@ -37,6 +38,7 @@
       "Source-Code": "https://git.sr.ht/~sthagen/omforme",
       "Test-Coverage": "https://codes.dilettant.life/coverage/omforme"
     },
+    "provides_extra": null,
     "release_url": "https://pypi.org/project/omforme/2023.6.18/",
     "requires_dist": [
       "typer (>=0.9.0)",
