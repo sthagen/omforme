@@ -7,21 +7,23 @@ name = "omforme"
 version = "2023.6.18"
 description = "Reshape (Danish: omforme)."
 readme = "README.md"
-license = {file = "LICENSE"}
+license = "MIT"
+license-files = ["LICENSE"]
 authors = [{ name = "Stefan Hagen", email = "stefan@hagen.link" }]
 maintainers = [{ name = "Stefan Hagen", email = "stefan@hagen.link" }]
 classifiers = [
     "Development Status :: 3 - Alpha",
     "Intended Audience :: Developers",
-    "License :: OSI Approved :: MIT License",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
     "Programming Language :: Python :: 3.9",
 ]
 keywords = ["developer-tools", "data-processing"]
 dependencies = [
-    "typer >= 0.15.1",
+    "typer >= 0.20.0",
 ]
 requires-python = ">=3.9"
 
@@ -45,7 +47,7 @@ exclude = ["test*"]
 [tool.black]
 line-length = 120
 skip-string-normalization = true
-target-version = [ "py39", "py310", "py311", "py312" ]
+target-version = [ "py39", "py310", "py311", "py312", "py313", "py314" ]
 
 [tool.coverage.run]
 branch = true
